@@ -34,7 +34,7 @@ public class ModuleTest
      */
     @Test
     public void testGetId() {
-        String expResult = "18387266";
+        String expResult = "CT417";
         assertEquals(expResult, this.module.getId());
     }
 

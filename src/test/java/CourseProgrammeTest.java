@@ -58,20 +58,22 @@ public class CourseProgrammeTest
     }
 
     /**
-     * Test of getStartDate method, of class CourseProgramme.
+     * Test of set & get StartDate methods, of class CourseProgramme.
      */
     @Test
-    public void testGetStartDate() {
-        LocalDate expResult = null;
+    public void testSetStartDate() {
+        LocalDate expResult = LocalDate.parse("2021-09-10");
+        this.courseProgramme.setStartDate(expResult);
         assertEquals(expResult, this.courseProgramme.getStartDate());
     }
 
     /**
-     * Test of getEndDate method, of class CourseProgramme.
+     * Test of set & get EndDate methods, of class CourseProgramme.
      */
     @Test
-    public void testGetEndDate() {
-        LocalDate expResult = null;
+    public void testSetEndDate() {
+        LocalDate expResult = LocalDate.parse("2022-05-01");
+        this.courseProgramme.setEndDate(expResult);
         assertEquals(expResult, this.courseProgramme.getEndDate());
     }
 }

@@ -18,7 +18,7 @@ public class StudentTest
     @Before
     public void setup()
     {
-        this.student = new Student("Patrick O'Connor", 21, null, "18387266", null, null);
+        this.student = new Student("Patrick O'Connor", 21, LocalDate.parse("2000-07-17"), "18387266", "4BP", null);
     }
 
     /**
@@ -63,7 +63,7 @@ public class StudentTest
      */
     @Test
     public void testGetCourseId() {
-        String expResult = null;
+        String expResult = "4BP";
         assertEquals(expResult, this.student.getCourse());
     }
 
@@ -81,7 +81,7 @@ public class StudentTest
      */
     @Test
     public void testGetDob() {
-        LocalDate expResult = null;
+        LocalDate expResult = LocalDate.parse("2000-07-17");
         assertEquals(expResult, this.student.getDob());
     }
 }
